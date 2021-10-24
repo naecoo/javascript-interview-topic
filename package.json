@@ -1,16 +1,37 @@
 {
-	"name": "javascript-interview-topic",
-	"version": "0.0.1",
-	"author": "naecoo",
-	"license": "MIT",
-  "description": "",
-	"keywords": [
-		"javascript",
-		"interview",
-		"algorithm"
-	],
-	"script": {},
-	"devDependencies": {
-		"jest": "^27.3.1"
-	}
+  "name": "javascript-interview-topic",
+  "version": "0.0.1",
+  "author": "naecoo",
+  "license": "MIT",
+  "main": "src/index.js",
+  "module": "src/index.js",
+  "description": "javascript interview topic",
+  "keywords": [
+    "javascript",
+    "interview",
+    "algorithm"
+  ],
+  "scripts": {
+    "test": "jest",
+    "format": "prettier --write src/"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@types/jest": "^27.0.2",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
+    "lint-staged": "^11.2.4",
+    "prettier": "^2.4.1",
+    "yorkie": "^2.0.0"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,ts}": [
+      "prettier --write",
+      "jest"
+    ]
+  }
 }

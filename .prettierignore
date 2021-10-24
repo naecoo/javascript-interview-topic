@@ -1,0 +1,10 @@
+build
+coverage
+bin
+dist
+lib
+public
+node_modules/
+iconfont/
+*.css
+docs
