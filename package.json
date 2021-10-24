@@ -1,0 +1,16 @@
+{
+	"name": "javascript-interview-topic",
+	"version": "0.0.1",
+	"author": "naecoo",
+	"license": "MIT",
+  "description": "",
+	"keywords": [
+		"javascript",
+		"interview",
+		"algorithm"
+	],
+	"script": {},
+	"devDependencies": {
+		"jest": "^27.3.1"
+	}
+}
